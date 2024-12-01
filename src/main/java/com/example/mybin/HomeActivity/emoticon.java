@@ -5,14 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.mybin.Membership.RetrofitAPI;
 import com.example.mybin.Membership.RetrofitService;
 import com.example.mybin.R;
-
 import java.io.IOException;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -77,7 +74,6 @@ public class emoticon extends AppCompatActivity {
         });
     }
 
-
     private void RaspberryPi() {
         String url = "http://192.168.0.133:3000/heart";
         OkHttpClient client = new OkHttpClient();
@@ -105,4 +101,3 @@ public class emoticon extends AppCompatActivity {
         });
     }
 }
-
