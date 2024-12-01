@@ -123,7 +123,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             mMap.setMyLocationEnabled(true);
             mMap.getUiSettings().setMyLocationButtonEnabled(true);
         }
-
         // CSV 파일에서 쓰레기통 위치 정보 읽어오기
         readTrashCanLocationsFromCSV();
 
@@ -156,11 +155,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] parts = line.split(","); // CSV 파일의 각 줄을 쉼표로 분리하여 배열에 저장
+                String[] parts = line.split(","); 
                 try {
                     double latitude = Double.parseDouble(parts[0]); // 위도
                     double longitude = Double.parseDouble(parts[1]); // 경도
-                    trashCanLocations.add(new LatLng(latitude, longitude)); // 쓰레기통 위치 추가
+                    trashCanLocations.add(new LatLng(latitude, longitude)); // 쓰레기통 위치
                 } catch (NumberFormatException e) {
                     Log.e("MapsActivity", "Error parsing latitude and longitude: " + e.getMessage());
                 }
