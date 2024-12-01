@@ -24,7 +24,6 @@ public class HomeScreen extends AppCompatActivity {
     ImageView mapImageView;
     ImageView tipsImageView;
 
-
     @SuppressLint({"WrongViewCast", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
