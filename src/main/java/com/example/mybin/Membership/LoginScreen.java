@@ -48,7 +48,7 @@ public class LoginScreen extends AppCompatActivity {
             }
         });
 
-//        //임시 로그인 버튼
+        //임시 로그인 버튼
         loginButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,6 +72,7 @@ public class LoginScreen extends AppCompatActivity {
             }
         });
     }
+    
     private void login(String userID, String password) {
         SignInDTO signInDTO = new SignInDTO(userID, password);
 
