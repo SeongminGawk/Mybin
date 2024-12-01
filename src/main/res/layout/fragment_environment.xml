@@ -10,8 +10,7 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/separatecollection" />
-
-
+    
     <!-- 검색 입력 창 -->
     <EditText
         android:id="@+id/search_edit_text"
@@ -43,5 +42,4 @@
         android:textColor="#000000"
         android:gravity="center"
         android:layout_gravity="center_horizontal" />
-
 </FrameLayout>
