@@ -10,11 +10,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.mybin.MapsActivity;
 import com.example.mybin.Membership.RetrofitAPI;
 import com.example.mybin.Membership.RetrofitService;
@@ -23,7 +21,6 @@ import com.example.mybin.RankingScreen;
 import com.example.mybin.environmentaltips.TipsScreen;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -50,18 +47,16 @@ public class MainHomeActivity extends AppCompatActivity {
         qrScanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // QR 코드 스캔 시작
                 new IntentIntegrator(MainHomeActivity.this).initiateScan();
             }
-
         });
-
-        // 홈 버튼의 클릭 이벤트 처리
+        
+        // 홈 화면 버튼
         home_button = findViewById(R.id.home_button);
         home_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 이미 홈 화면일 때는 아무 동작도 안함
+                // 이미 홈 화면일 때는 동작 없음
                 if (isHome) {
                     return;
                 }
@@ -179,8 +174,7 @@ public class MainHomeActivity extends AppCompatActivity {
         });
     }
 
-
-    // 화면 전환 관련 코드
+    // 화면 전환
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -204,7 +198,6 @@ public class MainHomeActivity extends AppCompatActivity {
                 return handleMenuItemClick(item);
             }
         });
-
         popupMenu.show();
     }
 
@@ -220,7 +213,6 @@ public class MainHomeActivity extends AppCompatActivity {
             startActivity(tip);
             return true;
         }
-
         return false;
     }
 }
