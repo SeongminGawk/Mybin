@@ -7,15 +7,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import androidx.fragment.app.Fragment;
-
 import com.example.mybin.R;
-
 import java.util.HashMap;
 import java.util.Map;
 
-//분리수거 프래그먼트
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link environmentFragment#newInstance} factory method to
@@ -84,14 +80,11 @@ public class environmentFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.fragment_environment, container, false);
-
-        // View 초기화
         searchEditText = view.findViewById(R.id.search_edit_text);
         searchButton = view.findViewById(R.id.search_button);
         resultTextView = view.findViewById(R.id.result_text_view);
-
+        
         // 검색 버튼 클릭 설정
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,7 +98,6 @@ public class environmentFragment extends Fragment {
                 }
             }
         });
-
         return view;
     }
 }
