@@ -38,21 +38,11 @@ public class LoginScreen extends AppCompatActivity {
         loginButton = findViewById(R.id.loginButton);
         usernameEditText = findViewById(R.id.usernameEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
-        loginButton2 = findViewById(R.id.loginButton2);
 
         membership_join.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Membership_join.class);
-                startActivity(intent);
-            }
-        });
-
-        //임시 로그인 버튼
-        loginButton2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainHomeActivity.class);
                 startActivity(intent);
             }
         });
