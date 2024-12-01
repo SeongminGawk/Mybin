@@ -4,13 +4,11 @@ package com.example.mybin.Membership;
 import java.io.Serializable;
 
 public class SignInDTO implements Serializable {
-    private String userID;  //아이디
-    private String password;    //비밀번호
+    private String userID;  
+    private String password;    
 
-    // 기본 생성자
     public SignInDTO() {}
 
-    // 매개변수가 있는 생성자
     public SignInDTO(String userID, String password) {
         this.userID = userID;
         this.password = password;
