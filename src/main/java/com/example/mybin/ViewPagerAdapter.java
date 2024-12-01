@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
 import com.example.mybin.environmentaltips.environmentFragment;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -19,7 +18,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         // 각 탭에 맞는 Fragment 반환
         switch (position) {
             case 0:
-                return new environmentFragment(); // 분리수거 방법 Fragment
+                // 분리수거 방법 Fragment
+                return new environmentFragment(); 
             default:
                 return null;
         }
@@ -27,7 +27,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        // 탭의 개수
+        // 탭 개수
         return 1;
     }
 
@@ -42,8 +42,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 return null;
         }
     }
-
     public void addFragment(environmentFragment environmentFragment, String 분리수거_방법) {
     }
-
 }
