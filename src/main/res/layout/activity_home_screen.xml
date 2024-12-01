@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".HomeScreen">
+
+    <ImageView
+        android:id="@+id/mapImageView"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/maps"
+        android:scaleType="centerCrop" />
+
+
+    <ImageView
+        android:id="@+id/tips"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:src="@drawable/tips"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="30dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/mapClickArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#00000000"
+        android:layout_below="@id/mapImageView"/>
+
+
+    <android.widget.Button
+        android:id="@+id/login_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="-270dp"
+        android:layout_marginTop="550sp"
+        android:layout_marginLeft="110dp"
+        android:gravity="center"
+        android:background="@drawable/style"
+        android:text="로그인"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/membership_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="600dp"
+        android:text="회원가입"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</RelativeLayout>
