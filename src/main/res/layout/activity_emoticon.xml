@@ -14,7 +14,6 @@
         android:layout_marginLeft="0dp"
         android:src="@drawable/sanitationworker"
         android:scaleType="centerCrop" />
-
     <ImageView
         android:id="@+id/heart"
         android:layout_width="100dp"
@@ -23,7 +22,6 @@
         android:layout_marginLeft="130dp"
         android:src="@drawable/heart"
         android:scaleType="centerCrop" />
-
     <TextView
         android:id="@+id/membership_btn"
         android:layout_width="match_parent"
@@ -34,7 +32,6 @@
         android:text="10 포인트를 사용하여 \n My bin에 하트 이모티콘을 전송할 수 있습니다."
         android:textColor="@color/black"
         android:textSize="20sp" />
-
     <Button
         android:id="@+id/emoticon_button"
         android:layout_width="wrap_content"
@@ -45,5 +42,4 @@
         android:text="이모티콘 전송"
         android:textColor="#ffffff"
         android:background="@drawable/button_background" />
-
 </RelativeLayout>
