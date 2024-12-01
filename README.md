@@ -7,6 +7,8 @@
 관련 코드:
 Membership_join.java: 회원가입 기능을 처리.
 RetrofitAPI.java, RetrofitService.java: 서버와 통신을 통해 회원 정보 전송.
+
+---
 로그인:
 
 사용자가 입력한 아이디와 비밀번호를 데이터베이스와 비교하여 인증.
