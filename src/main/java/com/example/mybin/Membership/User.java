@@ -3,17 +3,15 @@ package com.example.mybin.Membership;
 import java.io.Serializable;
 
 public class User implements Serializable {
-    private String userID ;     //아이디
-    private String password;    //비밀번호
-    private String phoneNumber; //휴대폰번호
-    private String address;     //주소
-    private boolean cleaner;    //환경미화원 여부
+    private String userID ;     // 아이디
+    private String password;    // 비밀번호
+    private String phoneNumber; // 휴대폰번호
+    private String address;     // 주소
+    private boolean cleaner;    // 환경미화원 여부
     private Long rankPoint;     // 랭킹 포인트
 
-    // 기본 생성자
     public User() {}
 
-    // 매개변수가 있는 생성자
     public User(String userID , String password, String phoneNumber, String address, boolean cleaner) {
         this.userID  = userID ;
         this.password = password;
