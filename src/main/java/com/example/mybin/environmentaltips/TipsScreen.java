@@ -1,10 +1,8 @@
 package com.example.mybin.environmentaltips;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-
 import com.example.mybin.R;
 import com.example.mybin.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
@@ -21,7 +19,6 @@ public class TipsScreen extends AppCompatActivity {
 
         // ViewPager에 어댑터 설정
         setViewPager(viewPager);
-
         // TabLayout과 ViewPager 연결
         tabLayout.setupWithViewPager(viewPager);
     }
