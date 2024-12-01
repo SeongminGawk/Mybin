@@ -1,12 +1,11 @@
 ## 주요 기능
 ### 1. 회원 관리
-회원가입:
-
-사용자가 회원 정보를 입력하면 데이터베이스에 안전하게 저장.
-비밀번호는 해시와 솔트를 사용해 암호화하여 저장.
-관련 코드:
-Membership_join.java: 회원가입 기능을 처리.
-RetrofitAPI.java, RetrofitService.java: 서버와 통신을 통해 회원 정보 전송.
+- **회원가입**:
+-사용자가 회원 정보를 입력하면 데이터베이스에 안전하게 저장.
+-비밀번호는 해시와 솔트를 사용해 암호화하여 저장.
+-관련 코드:
+-Membership_join.java: 회원가입 기능을 처리.
+-RetrofitAPI.java, RetrofitService.java: 서버와 통신을 통해 회원 정보 전송.
 
 ---
 로그인:
