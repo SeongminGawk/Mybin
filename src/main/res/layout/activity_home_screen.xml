@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".HomeScreen">
+    
     <ImageView
         android:id="@+id/mapImageView"
         android:layout_width="300dp"
