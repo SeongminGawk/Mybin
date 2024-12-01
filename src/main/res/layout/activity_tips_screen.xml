@@ -9,11 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/previous_tab_layout" />
-
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/previous_tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true" />
-
 </RelativeLayout>
