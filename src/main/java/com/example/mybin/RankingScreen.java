@@ -4,15 +4,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.mybin.Membership.RetrofitAPI;
 import com.example.mybin.Membership.RetrofitService;
 import com.example.mybin.Membership.User;
-
 import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -68,7 +64,7 @@ public class RankingScreen extends AppCompatActivity {
                 return i + 1; // 1부터 순위
             }
         }
-        return -1; // 사용자를 찾지 못한 경우
+        return -1; 
     }
 
     private void displayRanking(List<User> userList) {
