@@ -1,7 +1,6 @@
 package com.example.mybin.Membership;
 
 import java.util.List;
-
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -27,5 +26,4 @@ public interface RetrofitAPI {
 
     @GET("/user/rank/all") // 상위 랭킹 5개의 데이터
     Call<List<User>> getAllUserRank();
-    
 }
